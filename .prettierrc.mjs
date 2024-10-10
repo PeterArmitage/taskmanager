@@ -1,5 +1,8 @@
 /** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
 const config = {
+  tabWidth: 2,
+  useTabs: false,
+  semi: true,
   printWidth: 100,
   singleQuote: true,
   trailingComma: 'es5',

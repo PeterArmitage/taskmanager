@@ -1,5 +1,9 @@
 module.exports = {
-  extends: ['mantine', 'plugin:@next/next/recommended', 'plugin:jest/recommended'],
+  parser: '@typescript-eslint/parser',
+  extends: ['mantine', 'plugin:@next/next/recommended', 'plugin:jest/recommended', 'next/core-web-vitals',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'plugin:prettier/recommended',],
   plugins: ['testing-library', 'jest'],
   overrides: [
     {
@@ -13,5 +17,9 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
     'import/extensions': 'off',
+    'linebreak-style': 'off',
+    'prettier/prettier': 'error',
+    '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-explicit-any': 'error',
   },
 };

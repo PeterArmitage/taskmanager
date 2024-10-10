@@ -12,4 +12,7 @@ export default withBundleAnalyzer({
   experimental: {
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
 });
